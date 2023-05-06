@@ -1,0 +1,112 @@
+:root {
+  --dark: #0a1b59;
+  --primary: #113fe2;
+}
+
+* {
+  outline: 1px red dotted;
+}
+
+html {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  padding-block: 70px;
+  padding-inline: 130px;
+  width: calc(7 / 12 * 100%);
+}
+
+aside {
+  background: url("Picture.jpg");
+  width: calc(5 / 12 * 100%);
+  height: 100%;
+  background-size: cover;
+}
+
+main h3 {
+  font-size: 20px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+main div:first-child {
+  margin-top: 156px;
+}
+
+main .block-rounded {
+  padding-inline: 15px;
+  padding-block: 5px;
+  background-color: rgba(17, 63, 226, 0.1);
+  border-radius: 25px;
+  color: var(--primary);
+  letter-spacing: 2px;
+  line-height: 21px;
+  text-transform: uppercase;
+  font-weight: 700;
+  width: fit-content;
+}
+
+main .title {
+  margin-block: 15px;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 66px;
+  color: var(--dark);
+}
+
+main .textTitle {
+  color: var(--dark);
+  opacity: 0.6;
+  max-width: 475px;
+}
+
+main .inputEmail {
+  margin-top: 40px;
+}
+
+.inputEmail input {
+  padding-inline: 20px;
+  padding-block: 10px;
+  border: 1px solid rgba(17, 63, 226, 0.2);
+  border-radius: 8px;
+  line-height: 36px;
+  width: 390px;
+}
+
+.inputEmail input:focus {
+  outline: 2px solid var(--primary);
+}
+
+.inputEmail button {
+  line-height: 36px;
+  border-radius: 8px;
+  border: 1px solid var(--primary);
+  padding-inline: 30px;
+  padding-block: 10px;
+  color: white;
+  background-color: var(--primary);
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.inputEmail button:hover {
+  background-color: transparent;
+  color: var(--primary);
+}
+
+.inputEmail p {
+  font-size: 12px;
+  line-height: 24px;
+  color: rgba(10, 27, 89, 0.6);
+  margin-top: 20px;
+  padding-right: 10px;
+}
